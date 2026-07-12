@@ -30,14 +30,4 @@
   list-style: none;
 }
 
-@mixin button($bg-color: $black, $color: $white) {
-  display: inline-block;
-  color: $color;
-  background-color: $bg-color;
-  padding: 16px 25px;
-  border-radius: 28px;
-  text-decoration: none;
-  &:hover {
-    background-color: #666ca3; 
-  }
-}
+
