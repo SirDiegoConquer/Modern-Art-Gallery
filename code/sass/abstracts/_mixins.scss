@@ -41,36 +41,3 @@
     background-color: #666ca3; 
   }
 }
-
-@mixin button-pink-orange() {
-  @include button();
-  background-image: $gradient-pink-orange;
-  &:hover {
-    background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.5) 0%, 
-      rgba(255, 255, 255, 0.5) 100%),
-    linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%) ;
-  }
-
-}
-
-@mixin button-pink-blue() {
-  @include button();
-  background-image: $gradient-pink-blue;
-  &:hover {
-    background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.5) 0%, 
-      rgba(255, 255, 255, 0.5) 100%),
-    linear-gradient(180deg, #4251FF -54.32%, #F02AA6 100%) ;
-  }
-
-}
-
-@mixin button-link(){
-  color: $pink;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 18px;
-}

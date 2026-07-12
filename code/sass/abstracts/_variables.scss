@@ -6,7 +6,8 @@ $bp-desktop-xl: 1440px;
 /* Fonts*/
 
 
-$primary-font: "Plus Jakarta Sans", sans-serif;
+$title-font: "Big Shoulders", sans-serif;
+$body-font: "Outfit", sans-serif;
 
 /* Sizes Container */
 
@@ -14,15 +15,11 @@ $primary-font: "Plus Jakarta Sans", sans-serif;
 
 /* Colors */
 
-$blue: #666CA3;
-$black: #13183F;
-$grey: #83869A;
-$pink: #F74780;
-$light-pink: #FFA7C3;
+$bronce: #D5966C;
+$black: #151515;
+$grey: #444444;
 $white: #FFFFFF;
-$orange: #FF6F48;
-$magenta: #F02AA6;
-$dark-blue: #4851FF;
+
 
 $gradient-pink-orange: linear-gradient(180deg, $orange 0.04%, $magenta 100%);
 $gradient-pink-blue: linear-gradient(180deg, $dark-blue 0.04%, $magenta 100%);
