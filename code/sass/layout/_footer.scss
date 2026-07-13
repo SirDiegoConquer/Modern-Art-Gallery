@@ -1,10 +1,38 @@
 footer.footer__principal {
-    padding-top: 20px;
+    padding-top: 40px;
     padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
     background-color: $black;
     .container {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .footer__logo {
+        width: 100px;
+        padding-bottom: 30px;
+    }
+
+    .footer__description {
+        font-family: $body-font;
+        font-size: 14px;
+        font-weight: 300;
+        width: 280px;
+        line-height: 22px;
+        color: $white;
+        
+        padding-bottom: 30px;
         align-items: center;
+    }
+
+    .footer__icon {
+        color: $white;
+        display: flex;
+        gap: 18px;
+        padding-bottom: 30px;
+        
     }
 }
