@@ -26,6 +26,67 @@ h5 {
 .hero {
   margin-bottom: 120px;
 }
+.hero .hero-1 {
+  padding-bottom: 10px;
+}
+.hero .hero-1 img {
+  width: 100%;
+  height: 335px;
+  object-fit: cover;
+}
+.hero .hero-2 .hero-2__title {
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 45px;
+  color: #151515;
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+.hero .hero-2 .hero-2__description {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #444444;
+  padding-bottom: 20px;
+  padding-right: 50px;
+}
+.hero .hero-3 {
+  padding-bottom: 20px;
+}
+.hero .hero-3 img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+}
+.hero .hero-4 {
+  padding-bottom: 20px;
+}
+.hero .hero-4 img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+.hero .hero-5 {
+  background-color: #151515;
+}
+.hero .hero-5 .hero-5__title {
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 45px;
+  color: #FFFFFF;
+  padding: 40px 25px 20px 25px;
+}
+.hero .hero-5 .hero-5__description {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #FFFFFF;
+  padding: 10px 25px 50px 25px;
+}
 
 footer.footer__principal {
   padding-top: 40px;
@@ -62,8 +123,7 @@ footer.footer__principal .footer__icon {
 }
 
 header.header__principal {
-  padding-top: 200px;
-  padding-bottom: 20px;
+  padding-bottom: 100px;
 }
 header.header__principal .container {
   display: flex;
@@ -76,6 +136,7 @@ header.header__principal .header__title {
   line-height: 50px;
   color: #151515;
   padding-bottom: 30px;
+  padding-top: 10px;
 }
 header.header__principal .header__description {
   font-family: "Outfit", sans-serif;
@@ -85,9 +146,43 @@ header.header__principal .header__description {
   color: #151515;
   padding-bottom: 20px;
 }
+header.header__principal .btn-location {
+  display: inline-flex;
+  text-decoration: none;
+  font-family: "Big Shoulders", sans-serif;
+}
+header.header__principal .btn-location__text {
+  background-color: #151515;
+  color: white;
+  padding: 24px 40px;
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+header.header__principal .btn-location__text:hover {
+  background-color: #D5966C;
+}
+header.header__principal .btn-location__icon {
+  width: 56px;
+  background-color: #D5966C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header.header__principal .btn-location__icon:hover {
+  background-color: #151515;
+}
+header.header__principal .btn-location__icon img {
+  width: 10px;
+}
+
 .container_info {
-  padding-left: 15px;
-  padding-right: 22px;
+  padding-left: 16px;
+  padding-right: 16px;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -102,21 +197,18 @@ header.header__principal .header__description {
 body {
   padding: 0px;
   position: relative;
-  background-image: url("../img/cuadro-abuela.png");
-  background-repeat: no-repeat;
-  background-size: 200px;
-  background-position: 50% 0%;
-  z-index: 1;
-}
-body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 200px;
-  background-color: #E1E5E6;
-  z-index: -1;
+}
+body .header__img figure {
+  margin: 0;
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+}
+body .header__img figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 html * {

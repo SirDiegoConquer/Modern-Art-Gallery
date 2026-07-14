@@ -1,10 +1,13 @@
 header.header__principal {
-    padding-top: 200px;
-    padding-bottom: 20px;
+    padding-bottom: 100px;
     .container {
         display: flex;
         flex-direction: column;
     }
+
+    
+
+
     .header__title {
         font-family: $title-font;
         font-size: 60px;
@@ -12,6 +15,7 @@ header.header__principal {
         line-height: 50px;
         color: $black;
         padding-bottom: 30px;
+        padding-top: 10px;
     }
     .header__description {
         font-family: $body-font;
@@ -22,6 +26,41 @@ header.header__principal {
         padding-bottom: 20px;
     }
     .btn-location {
+    display: inline-flex;
+    text-decoration: none;
+    font-family: $title-font;
+    }
 
+    .btn-location__text {
+        background-color: $black;
+        color: white;
+        padding: 24px 40px;
+        font-family: $title-font;
+        font-size: 20px;
+        font-weight: 800;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+
+        display: flex;
+        align-items: center;
+        &:hover {
+            background-color: $bronce;
+        }
+    }
+
+    .btn-location__icon {
+        width: 56px;
+        background-color: #D5966C;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            background-color: $black;
+        }
+    }
+
+    .btn-location__icon img {
+        width: 10px;
     }
 }
