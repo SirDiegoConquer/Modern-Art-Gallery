@@ -68,3 +68,43 @@
         }
     }
 }
+
+.hero-location {
+    background-color: $black;
+    .container-location{
+        padding: 0 20px 0 20px;
+    }
+    .hero-location__title {
+        font-family: $title-font;
+        font-size: 50px;
+        font-weight: 900;
+        line-height: 45px;
+        color: $white;
+        padding-bottom: 30px;
+        padding-top: 45px;
+    }
+    .hero-location__subtitle {
+        font-family: $title-font;
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 45px;
+        color: $bronce;
+        padding-bottom: 15px;
+    }
+    .hero-location__direction {
+        font-family: $body-font;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 30px;
+        color: $white;
+        padding-bottom: 20px;
+    }
+    .hero-location__description {
+        font-family: $body-font;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 25px;
+        color: $white;
+        padding-bottom: 50px;
+    }
+}
