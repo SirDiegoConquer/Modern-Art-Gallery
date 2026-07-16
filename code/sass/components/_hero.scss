@@ -67,6 +67,51 @@
             padding: 10px 25px 50px 25px;
         }
     }
+    @include breakpoint(tablet) {
+        .container{
+            display: grid;
+            grid-template-columns: 1.2fr 0.4fr 1fr 1.5fr;
+            grid-template-areas:
+                "hero2 hero2 hero1 hero1"
+                "hero3 hero3 hero3 hero4"
+                "hero3 hero3 hero3 hero5";
+            gap: 10px;
+        }
+        .hero-1{
+            grid-area: hero1;
+            padding: 0;
+            img {
+                height: 100%;
+            }
+        }
+
+        .hero-2{
+            grid-area: hero2;
+            padding: 0;
+        }
+
+        .hero-3{
+            grid-area: hero3;
+            padding: 0;
+            img {
+                height: 100%;
+            }
+        }
+
+        .hero-4{
+            grid-area: hero4;
+            padding: 0;
+        }
+
+        .hero-5{
+            grid-area: hero5;
+            padding: 0;
+            .hero-5__title {
+                font-size: 45px;
+            }
+        }
+
+    }
 }
 
 .hero-location {

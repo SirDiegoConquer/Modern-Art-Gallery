@@ -1,5 +1,6 @@
 header.header__principal {
     padding-bottom: 100px;
+    position: relative;
     .container {
         display: flex;
         flex-direction: column;
@@ -62,6 +63,18 @@ header.header__principal {
 
     .btn-location__icon img {
         width: 10px;
+    }
+    @include breakpoint(tablet) {
+        .container {
+            position: absolute;
+            top: -570%;
+            right: -2%;
+            width: 50%;
+        }
+        .header__title  {
+            font-size: 70px;
+            line-height: 70px;
+        }
     }
 }
 
