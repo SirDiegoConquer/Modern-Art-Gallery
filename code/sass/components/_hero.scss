@@ -115,6 +115,7 @@
 }
 
 .hero-location {
+    position: relative;
     background-color: $black;
     .container-location{
         padding: 0 20px 0 20px;
@@ -151,5 +152,43 @@
         line-height: 25px;
         color: $white;
         padding-bottom: 50px;
+    }
+
+    @include breakpoint(tablet) {
+        .container-location {
+            padding-top: 70px;
+            padding-bottom: 45px;
+            display: flex;
+            gap: 20px;
+            .container-location2 {
+                width: 55%;
+                padding: 0;
+            }
+            .hero-location__title {
+                padding-left: 33px;
+                padding-right: 10px;
+                padding-top: 7px;
+            }
+        }
+    }
+
+    @include breakpoint(desktop) {
+        .container-location {
+            padding-top: 70px;
+            padding-bottom: 45px;
+            display: flex;
+            justify-content: space-between;
+            gap: 100px;
+            .container-location2 {
+                width: 50%;
+                padding: 0;
+                padding-right: 150px;
+            }
+            .hero-location__title {
+                padding-left: 123px;
+                padding-right: 100px;
+                padding-top: 7px;
+            }
+        }
     }
 }

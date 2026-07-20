@@ -95,16 +95,28 @@ header.header-location {
             background-repeat: no-repeat;
             background-position: center;
             width: 100%;
-            height: 100%;   
+            height: 100%;  
+            @include breakpoint(tablet) {
+                background-image: url("../img/puntero-mapa.png");
+                background-repeat: no-repeat;
+                background-position:top 565px center;
+                width: 100%;
+                height: 100%;  
+            } 
         }
+        
     }
     
     .btn-location-2 {
-    display: inline-flex;
-    text-decoration: none;
-    font-family: $title-font;
-    position: absolute;
-    top: 0;
+        display: inline-flex;
+        text-decoration: none;
+        font-family: $title-font;
+        position: absolute;
+        top: 0;
+        @include breakpoint(tablet) {
+            top: 0;
+            right: 62%;
+        }
     }
 
     .btn-location__text {
@@ -139,4 +151,5 @@ header.header-location {
     .btn-location__icon img {
         width: 10px;
     }
+
 }
