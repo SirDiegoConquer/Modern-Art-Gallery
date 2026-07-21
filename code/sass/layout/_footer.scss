@@ -51,6 +51,29 @@ footer.footer__principal {
             }
         }
     }
+
+    @include breakpoint(desktop) {
+        .container {
+            display: flex;
+            padding-left: 60px;
+            padding-right: 60px;
+            .footer__logo {
+                margin-left: 40px;
+                padding-left: 10px;
+                a {
+                    width: 1550px;
+                }
+            }
+            .footer__description {
+                font-size: 18px;
+                width: 400px;
+                
+            }
+            .footer__icon {
+                padding-right: 50px;
+            }
+        }
+    }
 }
 
 footer.footer-location {
